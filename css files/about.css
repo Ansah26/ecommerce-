@@ -1,0 +1,145 @@
+@import url("main.css");
+
+.about2{
+    display:flex;
+    margin: auto;
+    margin-top:40px;
+    width:440px;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.tess{
+    color:chocolate;
+    display:flex;
+    align-content: center;
+    text-align: center;
+    margin:auto;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bolder;
+    animation: come 3s linear;
+}
+
+@keyframes come{
+    from{
+        opacity:0;
+        transform:scale(0);
+    }
+    to{
+        opacity:1;
+        transform:scale(1.0);
+    }
+}
+
+.c,.c1,.c2{
+    display:flex;
+    margin-top:40px;
+}
+
+.ig1{
+    display:flex;
+    margin:auto;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+    box-sizing: border-box;
+    
+}
+
+@keyframes review{
+    from{
+        opacity:0;
+        transform: perspective(1600px)
+        rotateY(35deg)
+        rotateX(25deg)
+        translateY(50px)
+        scale(.55);
+        filter:blur(30px);
+    }
+    60%{
+        opacity:none;
+        transform: scaleX(.85);
+    }
+    100%{
+        opacity:1;
+        filter:blur(0);
+
+    }
+}
+
+.gg1{
+    display:flex;
+    margin:auto;
+    margin-left:40px;
+    margin-bottom: 40px;
+    padding:10px transparent;
+    box-sizing: content-box;
+    width:205px;
+    border-radius: 5px;
+    box-shadow: 4px 7px 6px black;
+    align-self: flex-start;
+    animation: review  linear both;
+    animation-timeline: view();
+    animation-range: entry contain;
+    
+}
+
+.pi1,.pi2,.pi3{
+    display:flex;
+    margin:auto;
+    margin-left:80px;
+    justify-items: center;
+    width:250px;
+    animation:come 6s  ease-out;
+    animation-delay: 2s;
+}
+
+.gg2{
+    display:flex;
+    margin:auto;
+    margin-left:40px;
+    margin-bottom: 40px;
+    padding:10px transparent;
+    box-sizing: content-box;
+    width:205px;
+    border-radius: 5px;
+    box-shadow: 4px 7px 6px black;
+    align-self: flex-start;
+    animation: review  linear both;
+    animation-timeline: view();
+    animation-range: entry contain 40%;
+}
+
+.gg3{
+    display:flex;
+    margin:auto;
+    margin-left:40px;
+    margin-bottom: 40px;
+    padding:10px transparent;
+    box-sizing: content-box;
+    width:205px;
+    border-radius: 5px;
+    box-shadow: 4px 7px 6px black;
+    align-self: flex-start;
+    animation: review  linear both;
+    animation-timeline: view();
+    animation-range: entry  contain 40%;
+}
+
+@media(max-width:768px) {
+    .pi1,.pi2,.pi3{
+        display:flex;
+        margin:auto;
+        margin-left:30px;
+        justify-items: center;
+        width:250px;
+        animation:come 6s  ease-out;
+        animation-delay: 2s;
+    }
+    
+}
+
